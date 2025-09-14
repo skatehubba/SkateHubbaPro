@@ -1,0 +1,55 @@
+You are a senior frontend engineer and a core street skater. 
+Build a WORKING beta for SkateHubba with the Play SKATE Challenge feature, deployable on Vercel. 
+Follow these requirements exactly:
+
+Tech Stack:
+- Next.js 14+ (App Router) + TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Zustand (persist to localStorage)
+- React Hook Form + Zod
+- Leaflet + OpenStreetMap tiles (no API keys)
+- Framer Motion (for animations)
+
+Non-Negotiable:
+- Output EVERY file with full code, no omissions or “…” placeholders.
+- Package manager: npm
+- Must run locally with `npm install && npm run dev` and deploy to Vercel with no edits.
+
+Features (MVP):
+1. Play SKATE Challenge
+   - Users can create or join a challenge.
+   - Each challenge tracks trick attempts, letters earned (S-K-A-T-E), and status (open, pending, complete).
+   - Mock video upload flow (simulated with file picker + thumbnail).
+   - 24-hour reply window (mocked with countdown timer).
+   - Status updates stored in localStorage via Zustand.
+
+2. Challenge Lobby
+   - List open and ongoing challenges.
+   - Button to “Start New Challenge.”
+   - Each entry shows trick, opponent, status, and letters.
+
+3. Challenge Detail Page
+   - Shows trick attempts, countdown, and current score.
+   - Buttons: “Upload Trick,” “Mark as Landed,” “Mark as Missed.”
+
+4. API mocks
+   - Create async mock APIs under `/app/api/*` that read/write JSON objects to localStorage with small setTimeout delays to simulate network.
+   - Endpoints: `/api/challenges`, `/api/challenges/[id]`.
+
+Branding & UX:
+- Nostalgic THPS underground vibe.
+- Colors: black/orange/white.
+- Graffiti overlays + subtle animations.
+- Clean, mobile-first UI.
+
+Deliverables:
+- Complete Next.js project scaffold.
+- All config files (`package.json`, `tsconfig.json`, `tailwind.config.ts`, etc.).
+- Working `/app` routes for lobby, challenge detail, and API.
+- Zustand store for challenges.
+- Tailwind + shadcn components styled in THPS vibe.
+
+Remember:
+- Output every file in its own fenced code block, with full paths.
+- No placeholders or skipped code.
