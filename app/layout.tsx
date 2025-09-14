@@ -1,5 +1,3 @@
-import React from "react";
-
 export const metadata = {
   title: "SkateHubba Pro",
   description: "Next.js app deployed on Vercel",
