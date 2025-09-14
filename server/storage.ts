@@ -163,6 +163,8 @@ export class MemStorage implements IStorage {
       videoThumbnail: challenge.videoThumbnail || null,
       creatorLetters: challenge.creatorLetters || "",
       opponentLetters: challenge.opponentLetters || "",
+      difficulty: typeof challenge.difficulty === "number" ? challenge.difficulty : 1,
+      buyIn: typeof challenge.buyIn === "number" ? challenge.buyIn : 0,
     };
     this.challenges.set(id, newChallenge);
     return newChallenge;
